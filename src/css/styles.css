@@ -197,7 +197,11 @@ i {
 
 /* ===NAVIGATIONASLEISTE (MOBIL) === */
 
-#mobile-nav-button {
+#mycheckbox {
+  display: none;
+}
+
+.menu-toggler {
   color: #FFF;
   float: right;
   font-size: 2rem;
@@ -207,12 +211,16 @@ i {
   position: relative;
   margin-top: .4rem;
   margin-bottom: 6.5px;
+  position: relative;
 }
 
-#mobile-nav-button > span {
+.menu-toggler > i {
   position: absolute;
-  bottom: -2.5px;
-  left: 7px;
+  font-size: 1.6rem;
+  left: 5.4px;
+  top: 4px;
+  font-weight: 100;
+  cursor: pointer;
 }
 
 #mobile-nav-content > ul > li {
@@ -224,37 +232,40 @@ i {
   margin: 0;
 }
 
-#mobile-nav-dropdown {
-  position: relative;
-  display: inline-block;
-  float: right;
-}
-
 #mobile-nav-content {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50px;
-  display: none;
+  right: -25rem;
+  transition: all 650ms;
+  display: flex;
 }
 
-#mobile-nav-dropdown:hover > #mobile-nav-content {
-  display: block;
-}
-
-#mobile-nav {
-  display: none;
+#mycheckbox:checked + #mobile-nav-content{
+  right: 0;
 }
 
 @media (max-width: 768px) {
   #desktop-nav {
     display: none;
   }
-
-  #mobile-nav {
+}
+@media (min-width: 768px) {
+  #desktop-nav {
     display: block;
   }
 }
 
+@media (max-width: 768px) {
+  #mobile-nav {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #mobile-nav {
+    display: none;
+  }
+}
 	/* === HEADER-BANNER === */
 
 #header-banner {

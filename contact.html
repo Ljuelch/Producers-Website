@@ -19,55 +19,54 @@
 
 		<!-- === NAVIGATIONSLEISTE === -->
 
-		<nav id="header-nav">
+	<nav id="header-nav">
 
-			<div class="container" id="desktop-nav">
-				<div class="row">
-					<div class="col-6">
-
-						<a href="index.html">
-							<img src="src/img/Pierre-Logo.png" alt="Logo von Prod. by Hellmood"></a>
-
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="tracks.html">Beats</a></li>
-								<li class="active"><a href="contact.html">Contact</a></li>
-								<!-- <li><a href="pics.html">Pics</a></li> -->
-							</ul>
-
-					</div>
+		<div class="container" id="desktop-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link"><img src="src/img/Pierre-Logo.png" alt="Logo von Prod. by Hellmood"></a>
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="tracks.html">Beats</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<!-- <li><a href="pics.html">Pics</a></li> -->
+						</ul>
 				</div>
 			</div>
+		</div>
+		<div class="container" id="mobile-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link">
+						<img src="src/img/Pierre-Logo.png" alt="Logo von Prod. by Hellmood"></a>
 
-			<div class="container" id="mobile-nav">
-				<div class="row">
-					<div class="col-6">
-
-						<a href="index.html">
-							<img src="src/img/Pierre-Logo.png" alt="Logo von Prod. by Hellmood"></a>
-
-								<div class="clearfix" id="mobile-nav-dropdown">
-
-								<div id="mobile-nav-button"><span>&equiv;</span></div>
-
-								<div class="clearfix" id="mobile-nav-content">
-
+							<label for="mycheckbox" class="menu-toggler">
+								<i class="fa fa-bars"></i>
+							</label>
+							<input type="checkbox" id="mycheckbox">
+							<div class="clearfix" id="mobile-nav-content">
 								<ul>
-									<li><a href="index.html">Home</a></li>
+									<li class="active-mobile"><a href="index.html">Home</a></li>
 									<li><a href="tracks.html">Tracks</a></li>
-									<li class="active-mobile"><a href="contact.html">Contact</a></li>
-									<!-- <li><a href="pics.html">Pics</a></li> -->
+									<li><a href="contact.html">Contact</a></li>
 								</ul>
-
 							</div>
-
+							<!-- <div class="clearfix" id="mobile-nav-dropdown">
+							<div id="mobile-nav-button"><i class="fa fa-bars"></i></div>
+							<div class="clearfix" id="mobile-nav-content">
+							<ul>
+								<li class="active-mobile"><a href="index.html">Home</a></li>
+								<li><a href="tracks.html">Tracks</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								 <li><a href="pics.html">Pics</a></li>
+							</ul>
 						</div>
-
-					</div>
+					</div> -->
 				</div>
 			</div>
+		</div>
 
-		</nav>
+	</nav>
 
 		<!-- === HEADER-BANNER === -->
 
